@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>BlackJack</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" defer></script>
+    <script src="Card.js" defer></script>
+    <script src="Deck.js" defer></script>
+    <script src="Game.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>BlackJack</h1>
+    <p>Votre argent: <span id="myMoney">500</span> - Celui de la banque: <span id="bankMoney">500</span>
+        - Mise : <span id="bet">50</span> </p>
+
+    <h4>Nombre de victoires du joueur <span id="playerWin">0</span> - Nombre de victoires de la banque: <span
+            id="bankWin">0</span></h4>
+
+    <div id="bank">
+        <h2>Les cartes de la banque</h2>
+        <p>
+            Score de la banque (sans la carte retournée): <span id="bankScore">0</span>
+        </p>
+
+        <div id="bankSet">
+            <div id="hiddenCardDiv"></div>
+            <div id="bankCards"></div>
+        </div>
+    </div>
+
+
+    <h2>Vos cartes</h2>
+    <p>
+        Votre score: <span id="score">0</span>
+    </p>
+    <button id="startButton">Lancer la manche</button>
+    <button id="addCardButton" disabled="true">Piocher</button>
+    <button id="doubleBetButton" disabled="true">Doubler la mise</button>
+    <button id="restartButton" disabled="true">Recommencer</button>
+    <button id="confirmButton" disabled="true">Confirmer</button>
+    <div id="myCards"></div>
+    
+</body>
+
+</html>

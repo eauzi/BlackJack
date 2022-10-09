@@ -1,0 +1,36 @@
+body {
+    padding: 50px;
+    transition: 0.8s;
+}
+
+.card{
+    border : 2px solid;
+    border-radius: 4px;
+    width : 100px;
+    position : relative;
+    top : 0px;
+    transition : 0.3s;
+    display: inline;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    top : -10px;
+    transition: 0.4s;
+}
+.Diamonds, .Hearts{
+    border-color: red;
+}
+
+.Spades, .Clubs{
+    border-color: black;
+}
+
+#myCards{
+    margin-top: 10px;
+}
+
+#bankSet div{
+    display: inline;
+}
